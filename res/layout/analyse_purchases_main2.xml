@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.example.studentmoneymanagement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smm_bg1" >
+
+    <ViewAnimator
+        android:id="@+id/viewAnimator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <com.example.studentmoneymanagement.AnalysePurchasesCustomView
+            android:id="@+id/analysePurchasesCustomView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.studentmoneymanagement.AnalysePurchasesCustomViewPie
+            android:id="@+id/analysePurchasesCustomView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.studentmoneymanagement.AnalysePurchasesCustomViewCategories
+            android:id="@+id/analysePurchasesCustomView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewAnimator>
+
+</RelativeLayout>

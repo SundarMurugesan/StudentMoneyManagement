@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smm_bg1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Manage Your Purchases"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/recentpurchasebutton1"
+        style="@style/btnStyleBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="29dp"
+        android:text="CHECK RECENT PURCHASES" />
+
+    <Button
+        android:id="@+id/analysepurchasebutton1"
+        style="@style/btnStyleBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/recentpurchasebutton1"
+        android:text="ANALYSE YOUR PURCHASES" />
+
+    <Button
+        android:id="@+id/backbutton2"
+        style="@style/btnStyleBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/priceEditText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/entertainmentChoiceBtn"
+        android:layout_marginBottom="23dp"
+        android:text="BACK" />
+
+    <Button
+        android:id="@+id/addapurchasebutton1"
+        style="@style/btnStyleBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/backbutton2"
+        android:layout_alignBottom="@+id/backbutton2"
+        android:layout_alignRight="@+id/priceEditText"
+        android:text="ADD PURCHASE" />
+
+    <Button
+        android:id="@+id/clearpurchasesbutton1"
+        style="@style/btnStyleBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/analysepurchasebutton1"
+        android:text="CLEAR PURCHASES" />
+
+    <EditText
+        android:id="@+id/storeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/productEditText"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:ems="10"
+        android:hint="Store"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/productEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/priceEditText"
+        android:layout_alignLeft="@+id/storeEditText"
+        android:layout_alignRight="@+id/textView1"
+        android:ems="10"
+        android:hint="Product" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backbutton2"
+        android:layout_alignLeft="@+id/productEditText"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="numberDecimal|numberSigned" 
+        
+        />
+
+    <Button
+        android:id="@+id/billsChoiceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/entertainmentChoiceBtn"
+        android:layout_alignBottom="@+id/entertainmentChoiceBtn"
+        android:layout_alignLeft="@+id/addapurchasebutton1"
+        android:background="@drawable/category_choice_style_btn"
+        android:text="Bills"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/groceriesChoiceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/billsChoiceBtn"
+        android:layout_alignBottom="@+id/billsChoiceBtn"
+        android:layout_alignRight="@+id/storeEditText"
+        android:background="@drawable/category_choice_style_btn"
+        android:text="Groceries"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/entertainmentChoiceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/storeEditText"
+        android:layout_centerVertical="true"
+        android:background="@drawable/category_choice_style_btn"
+        android:text="Entertainment"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/creditBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/entertainmentChoiceBtn"
+        android:layout_alignRight="@+id/entertainmentChoiceBtn"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/credit_style_btn"
+        android:text=" CREDIT "
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/debitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/creditBtn"
+        android:layout_alignBottom="@+id/creditBtn"
+        android:layout_toRightOf="@+id/billsChoiceBtn"
+        android:background="@drawable/debit_style_btn"
+        android:text="DEBIT"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

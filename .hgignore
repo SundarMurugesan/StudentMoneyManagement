@@ -1,0 +1,5 @@
+syntax: glob
+src/com/example/studentmoneymanagement/MainActivity.java.orig
+*.class
+syntax: regexp
+[A-Za-z]*[0-9]*.class

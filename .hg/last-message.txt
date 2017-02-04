@@ -1,0 +1,3 @@
+NEW FEATURE: DEBIT/CREDIT
+- added new credit and debit style buttons
+- added new image files for bills

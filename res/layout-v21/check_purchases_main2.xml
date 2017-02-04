@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    
+    android:padding="6dip">
+
+    <com.example.studentmoneymanagement.CustomTextView
+        android:id="@+id/price"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textColor="#FFFFFFFF"
+        android:text="$0.00" 
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <com.example.studentmoneymanagement.CustomTextView
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/price"
+        android:layout_alignLeft="@+id/price"
+        android:gravity="center_vertical"
+        android:text="NO ITEM"
+        android:textColor="#FFFFFFFF"
+        android:textColorHint="#FFFFFFFF"/>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="sqlite_jdbc-153053344fe-447204721f09e3e1" provider="generic" driver="sqlite_jdbc" name="SQLite - wallet.db" create-date="1456081176665" save-password="true" show-system-objects="true" read-only="false">
+		<connection server="" database="C:\Users\Warren Pinto\Desktop\wallet.db" url="jdbc:sqlite:C:\Users\Warren Pinto\Desktop\wallet.db" user="" type="dev">
+			<bootstrap/>
+		</connection>
+	</data-source>
+</data-sources>
