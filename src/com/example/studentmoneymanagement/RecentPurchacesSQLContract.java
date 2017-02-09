@@ -23,9 +23,12 @@ public class RecentPurchacesSQLContract extends SQLiteOpenHelper implements Base
 	public static final String COLUMN_NAME_DEBIT_CREDIT = "debit_credit";
 	
 	private static final String DATABASE_PATH = "/data/data/com.example.studentmoneymanagement/" + WalletSQLContract.DATABASE_NAME;
+	static final String DATABASE_NAME = "purchases.db";
+	static final int DATABASE_VERSION = 15;
+	
 	
 	public RecentPurchacesSQLContract(Context context){	
-		super(context, DATABASE_PATH, null, WalletSQLContract.DATABASE_VERSION);
+		super(context, DATABASE_PATH, null, DATABASE_VERSION);
 	}
 	
 	public static final String DATABASE_CREATE = "create table " + TABLE_NAME + " (" + COLUMN_NAME_STORE + 
@@ -42,8 +45,9 @@ public class RecentPurchacesSQLContract extends SQLiteOpenHelper implements Base
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		if(newVersion > oldVersion)
-			db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-		
-		onCreate(db);
+		{
+			onCreate(db);
+		}
+	
 	}
 }

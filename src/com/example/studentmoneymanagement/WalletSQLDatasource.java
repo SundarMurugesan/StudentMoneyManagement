@@ -80,9 +80,6 @@ public class WalletSQLDatasource {
 	}
 
 	public ArrayList<String[]> readDataAll() {
-		// TODO Auto-generated method stub
-		//ArrayList<Wallet> walletList = new ArrayList<Wallet>();
-		//return all columns in the database with no WHERE clause /group order
 		this.open();
 		
 		ArrayList<String[]> plans = new ArrayList<String[]>();

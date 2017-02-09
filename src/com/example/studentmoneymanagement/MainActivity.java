@@ -4,15 +4,11 @@ package com.example.studentmoneymanagement;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -37,10 +33,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf");
-				
-	//	rpDatasource = new RecentPurchacesSQLDatasource(this);
-	//	rpDatasource.deleteAllData();
-		
+
 		walletDatasource = new WalletSQLDatasource(this);
 		final String[] data = walletDatasource.readData();
 		
@@ -88,7 +81,7 @@ public class MainActivity extends Activity {
 		
 		
 				
-				/*View All Plans Button Handler*/
+		/*View All Plans Button Handler*/
 		allPlansButton.setOnClickListener(new View.OnClickListener() {
 		public void onClick(View v) {
 			//switch to Settings View.

@@ -29,7 +29,7 @@ public class WalletSQLContract extends SQLiteOpenHelper implements BaseColumns{
 	
 	
 	static final String DATABASE_NAME = "wallet.db";
-	static final int DATABASE_VERSION = 11;
+	static final int DATABASE_VERSION = 15;
 	private static final String DATABASE_PATH = "/data/data/com.example.studentmoneymanagement/" + DATABASE_NAME;
 	
 	//create the wallet database
@@ -48,8 +48,8 @@ public class WalletSQLContract extends SQLiteOpenHelper implements BaseColumns{
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		if(newVersion > oldVersion)
-			db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-		
-		onCreate(db);
+		{
+			onCreate(db);
+		}
 	}
 }
